@@ -1,14 +1,17 @@
-// let difficult = 3
+//  let difficult = 3
 const minimalPosition = 0
+const menuDifficult = document.querySelectorAll('.menu-difficult a')
+  
+    menuDifficult.addEventListener('click', () => {
+      let difficult = +menuDifficult.dataset.diff
+      return difficult
+    })
+  
 
-function getDifficult() {
-  let difficult 
-  return difficult
-}
 
-function createTable(difficult) {
+function createTable(diff) {
   const gameContainer = document.querySelector('#game-container')
-  for(let i = 0; i < difficult; i++) {
+  for(let i = 0; i < diff; i++) {
     const card = document.createElement('div')
     card.innerHTML = `карта ${i}`
     gameContainer.appendChild(card, gameContainer)
@@ -27,5 +30,12 @@ function setBug(minPos, diff) {
 }
 
 
-createTable(difficult)
-setBug(minimalPosition, difficult)
+
+
+const startButton = document.querySelector('#start-button')
+startButton.addEventListener('click', () => {
+  createTable(difficult)
+  setBug(minimalPosition, difficult)
+})
+
+
