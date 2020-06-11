@@ -1,12 +1,20 @@
-//  let difficult = 3
+let difficult = 0
 const minimalPosition = 0
-const menuDifficult = document.querySelectorAll('.menu-difficult a')
-  
-    menuDifficult.addEventListener('click', () => {
-      let difficult = +menuDifficult.dataset.diff
-      return difficult
-    })
-  
+
+
+let handler = function() {
+  difficult = +(this.dataset.diff)
+  console.log(difficult)
+  return difficult
+}
+
+  const containerForDifficult = document.querySelectorAll('.difficult-level div')
+
+  containerForDifficult.forEach((elem)=> {
+    elem.addEventListener('click', handler) 
+  })
+
+
 
 
 function createTable(diff) {
@@ -18,13 +26,20 @@ function createTable(diff) {
   }
 }
 
+// возможно переменную gameContainer надо вынести выше
+function resetTable() {
+  const gameContainer = document.querySelector('#game-container')
+  while(gameContainer.firstChild) {
+    gameContainer.removeChild(gameContainer.firstChild);
+  }
+}
+
 function getRandomPosition(minPos, diff) {
   return Math.floor(Math.random() * (diff - minPos)) + minPos;
 }
 
 function setBug(minPos, diff) {
   const bugPosition = getRandomPosition(minPos, diff)
-  console.log(bugPosition)
   const gameCards = document.querySelectorAll('#game-container div')
   gameCards[bugPosition].innerHTML = `BUG!`
 }
@@ -34,8 +49,11 @@ function setBug(minPos, diff) {
 
 const startButton = document.querySelector('#start-button')
 startButton.addEventListener('click', () => {
+  resetTable()
   createTable(difficult)
   setBug(minimalPosition, difficult)
 })
+
+
 
 
