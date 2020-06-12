@@ -3,7 +3,8 @@ const containerForDifficult = document.querySelectorAll('.difficult-level div')
 const gameContainer = document.querySelector('#game-container')
 const startButton = document.querySelector('#start-button')
 
-let difficult = 0
+// сложность по умочанию "простой"
+let difficult = 3
 
 const handlerForUserSetDifficult = function() {
   difficult = +(this.dataset.diff)
