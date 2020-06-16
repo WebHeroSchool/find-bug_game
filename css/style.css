@@ -1,0 +1,17 @@
+body{
+  background: url(../img/background.png);
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+}
+.header h1 {
+  font-size: 57px;
+  line-height: 67px;
+}
+.start-button_btn{
+  color: #FFFFFF;
+  width: 352px;
+  height: 95px;
+  background: #D62B2E;
+  border-radius: 7px;
+}
