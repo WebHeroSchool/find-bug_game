@@ -1,5 +1,6 @@
 const minimalPosition = 0
 const containerForDifficult = document.querySelectorAll('.difficult-level div')
+const gameMenu = document.querySelector('#menu')
 const gameContainer = document.querySelector('#game-container')
 const startButton = document.querySelector('#start-button')
 
@@ -29,12 +30,14 @@ containerForDifficult.forEach((elem)=> {
 function createTable(diff) {
   for(let i = 0; i < diff; i++) {
     const card = document.createElement('div')
+    card.classList.add('card_top')
     card.innerHTML = `карта ${i}`
     gameContainer.appendChild(card, gameContainer)
   }
 }
 
 function resetTable() {
+  gameMenu.classList.remove('hide')
   while(gameContainer.firstChild) {
     gameContainer.removeChild(gameContainer.firstChild);
   }
@@ -46,7 +49,8 @@ function getRandomPosition(minPos, diff) {
 function setBug(minPos, diff) {
   const bugPosition = getRandomPosition(minPos, diff)
   const gameCards = document.querySelectorAll('#game-container div')
-  gameCards[bugPosition].innerHTML = `BUG!`
+  //gameCards[bugPosition].innerHTML = `BUG!`
+  gameCards[bugPosition].classList.add('card_bug')
 }
 
 startButton.addEventListener('click', () => {
@@ -57,6 +61,7 @@ startButton.addEventListener('click', () => {
   ArrIntoBugFind.forEach((elem) => {
     elem.addEventListener('click', handlerForUserFindBug)
   })
+  gameMenu.classList.add('hide')
 })
 
 
