@@ -14,11 +14,11 @@ const handlerForUserSetDifficult = function() {
 }
 
 const handlerForUserFindBug = function() {
-  if(this.innerHTML == `BUG!`) {
-    console.log('EPIC WIN!')
+  if(this.classList.contains('bug')) {
+    this.classList.add('card_bug')
     this.addEventListener('click', resetTable)
   } else {
-    console.log('Проиграл')
+    this.classList.add('card_inside')
     this.addEventListener('click', resetTable)
   }
 }
@@ -31,7 +31,7 @@ function createTable(diff) {
   for(let i = 0; i < diff; i++) {
     const card = document.createElement('div')
     card.classList.add('card_top')
-    card.innerHTML = `карта ${i}`
+    //card.innerHTML = `карта ${i}`
     gameContainer.appendChild(card, gameContainer)
   }
 }
@@ -49,8 +49,7 @@ function getRandomPosition(minPos, diff) {
 function setBug(minPos, diff) {
   const bugPosition = getRandomPosition(minPos, diff)
   const gameCards = document.querySelectorAll('#game-container div')
-  //gameCards[bugPosition].innerHTML = `BUG!`
-  gameCards[bugPosition].classList.add('card_bug')
+  gameCards[bugPosition].classList.add('bug')
 }
 
 startButton.addEventListener('click', () => {
