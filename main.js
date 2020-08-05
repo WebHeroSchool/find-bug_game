@@ -31,13 +31,13 @@ function createTable(diff) {
   for(let i = 0; i < diff; i++) {
     const card = document.createElement('div')
     card.classList.add('card_top')
-    //card.innerHTML = `карта ${i}`
     gameContainer.appendChild(card, gameContainer)
   }
 }
 
 function resetTable() {
   gameMenu.classList.remove('hide')
+  
   while(gameContainer.firstChild) {
     gameContainer.removeChild(gameContainer.firstChild);
   }

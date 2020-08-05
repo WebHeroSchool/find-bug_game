@@ -19,7 +19,7 @@ body{
   border-radius: 7px;
 }
 #game-container{
-  width: 700px;
+  /* width: 700px; */
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -30,11 +30,17 @@ body{
   background-image: url(../img/card-top.jpg);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
   border-radius: 7px;
-  transition: background .3s ease;
+  transition: transform .5s ease;
 }
 .card_inside{
+  transform: rotateY(180deg);
   background-image: url(../img/end.jpg);
 }
 .card_bug{
+  transform: rotateY(180deg);
   background-image: url(../img/bug.jpg);
 }
+.noclick{
+  pointer-events: none
+}
+
