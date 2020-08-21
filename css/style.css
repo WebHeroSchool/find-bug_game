@@ -43,4 +43,7 @@ body{
 .noclick{
   pointer-events: none
 }
+.clicked{
+  background-image: none;
+}
 

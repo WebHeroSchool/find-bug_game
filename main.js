@@ -14,12 +14,16 @@ const handlerForUserSetDifficult = function() {
 }
 
 const handlerForUserFindBug = function() {
+  // например тут if (!this) то {classList.add(некликабельно)}
   if(this.classList.contains('bug')) {
-    this.classList.add('card_bug')
+    this.classList.add('card_bug', 'clicked')
     this.addEventListener('click', resetTable)
   } else {
-    this.classList.add('card_inside')
+    this.classList.add('card_inside', 'clicked')
     this.addEventListener('click', resetTable)
+  }
+  if(!(this.classList.contains('clicked'))) {
+    this.removeEventListener('click')
   }
 }
 
@@ -37,11 +41,11 @@ function createTable(diff) {
 
 function resetTable() {
   gameMenu.classList.remove('hide')
-  
   while(gameContainer.firstChild) {
     gameContainer.removeChild(gameContainer.firstChild);
   }
 }
+
 function getRandomPosition(minPos, diff) {
   return Math.floor(Math.random() * (diff - minPos)) + minPos;
 }
