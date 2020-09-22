@@ -8,22 +8,26 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Find Bug!</title>
 </head>
-<body>
-  <div id="menu">
-    <header class="header">
-      <h1>Выберите уровень сложности:</h1>
-      <p>Выберите сложность и игра начнется. Чем выше уровень - тем больше будет выборка карт. </p>
-    </header>
-    <div class="difficult-level">
-      <div data-diff="3">Простой</div>
-      <div data-diff="6">Средний</div>
-      <div data-diff="10">Сложный</div>
-    </div>
-    <div class="start-button">
-      <button class="start-button_btn" id="start-button">Начать игру</button>
-    </div>
-</div>
-  <div id="game-container"></div>
+<body class="body">
+  <nav class="nav" id="nav">
+    <h1 class="nav__title">Выберите уровень сложности:</h1>
+    <p class="nav__subtitle">Выберите сложность и игра начнётся. Чем выше уровень - тем больше будет выборка карт.</p>
+    <form name="form" class="difficulty">
+      <label class="label" for="label-easy">
+        <input class="radio label-easy" id="label-easy" type="radio" name="diff" value="easy" onchange="getGameDifficult()" checked>
+        <p class="label__text-easy" id='checked-easy'>Простой</p>
+      </label>
+      <label class="label" for="label-medium">
+        <input class="radio label-medium" id="label-medium" type="radio" name="diff" value="medium" onchange="getGameDifficult()">
+        <p class="label__text-medium" id='checked-medium'>Средний</p>
+      </label>
+      <label class="label" for="label-hard">
+        <input class="radio label-hard" id="label-hard" type="radio" name="diff" value="hard" onchange="getGameDifficult()">
+        <p class="label__text-hard" id='checked-hard'>Сложный</p>
+      </label>
+      <input class="difficulty__game-start" type="button" value="Начать игру" id="game-start">
+    </form>
+  </nav>
   <script src="main.js"></script>
 </body>
 </html>

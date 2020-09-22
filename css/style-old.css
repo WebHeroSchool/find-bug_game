@@ -1,0 +1,50 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background: url(../img/background.png);
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+}
+.hide{
+  display: none;
+}
+.header h1{
+  font-size: 57px;
+  line-height: 67px;
+}
+.start-button_btn{
+  color: #FFFFFF;
+  width: 352px;
+  height: 95px;
+  background: #D62B2E;
+  border-radius: 7px;
+}
+.difficult-level{
+  cursor: pointer;
+  width: fit-content;
+}
+.card_top{
+  width: 218px;
+  height: 341px;
+  background-image: url(../img/card-top.jpg);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  border-radius: 7px;
+  transition: transform .5s ease;
+}
+.card_inside{
+  transform: rotateY(180deg);
+  background-image: url(../img/end.jpg);
+}
+.card_bug{
+  transform: rotateY(180deg);
+  background-image: url(../img/bug.jpg);
+}
+.noclick{
+  pointer-events: none
+}
+.clicked{
+  background-image: none;
+}
+
