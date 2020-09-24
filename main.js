@@ -23,7 +23,7 @@ function getGameDifficult() {
     easyChecked.classList.remove('checked');
     mediumChecked.classList.remove('checked');
     hardChecked.classList.add('checked');
-    return 10;
+    return 9;
   } else {
     easyChecked.classList.add('checked');
     return 3;
@@ -40,7 +40,7 @@ const createAndShowCards = () => {
     10: 'main-to-ten-cards',
   };
   
-  createCards(numberOfCard);
+  createCards(getGameDifficult());
   addFrontAndBackCardsSide();
   main.className = keysOfCardClasses[numberOfCard];
 };
