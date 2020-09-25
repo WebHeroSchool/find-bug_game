@@ -90,7 +90,7 @@ const startGameAndDecideWinnerAndLoosers = () => {
   createAndShowCards();
   setRandomOfWinner();
   
-  const losers = document.querySelectorAll('card__looser');
+  const losers = document.querySelectorAll('.card-looser');
   losers.forEach((elem) => {
     elem.addEventListener('click', () => {
         if (elem.className !== 'card__looser_rotated' && numberOfClick == 0) {
