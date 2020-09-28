@@ -30,6 +30,21 @@ function getGameDifficult() {
   };
 };
 
+const addFrontAndBackCardsSide = () => {
+  let numberOfEachCardTurns = 0;
+  Array.from(document.querySelectorAll('.card')).forEach((el) => {
+    cards.push(el);
+    const cardFront = document.createElement('div');
+    cardFront.className = 'card__front';
+    cards[numberOfEachCardTurns].append(cardFront);
+
+    const cardBack = document.createElement('div');
+    cardBack.className = 'card__looser_back';
+    cards[numberOfEachCardTurns].append(cardBack);
+    numberOfEachCardTurns++;
+  });
+};
+
 const createAndShowCards = () => {
   getGameDifficult();
   createMainContainer();
@@ -57,21 +72,6 @@ const createCards = (number) => {
     card.className = 'card card-looser';
     document.body>main.append(card);
   };
-};
-
-const addFrontAndBackCardsSide = () => {
-  let numberOfEachCardTurns = 0;
-  Array.from(document.querySelectorAll('.card')).forEach(el => {
-    cards.push(el);
-    const cardFront = document.createElement('div');
-    cardFront.className = 'card__front';
-    cards[numberOfEachCardTurns].append(cardFront);
-
-    const cardBack = document.createElement('div');
-    cardBack.className = 'card__looser_back';
-    cards[numberOfEachCardTurns].append(cardBack);
-    numberOfEachCardTurns++;
-  });
 };
 
 const setRandomOfWinner = () => {

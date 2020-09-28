@@ -1,12 +1,12 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
+body {
   background: url(../img/background.png);
   background-size: cover;
   font-family: 'Roboto', sans-serif;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .nav {
@@ -14,8 +14,9 @@ body{
   padding: 0;
   min-height: 750px;
   width: 1300px;
-  background: url(../img/card-first.png) bottom 0 left 900px no-repeat,
-              url(../img/card-second.png) bottom 0 left 750px no-repeat;
+  background: 
+          url(../img/card-first.png) bottom 0 left 900px no-repeat,
+          url(../img/card-second.png) bottom 0 left 750px no-repeat;
 }
 
 .nav__title {
@@ -43,13 +44,26 @@ body{
   display: none;
 }
 
+.label__text-easy,
+.label__text-medium {
+  margin: 0 0 24px 0;
+  height: 59px;
+  padding-left: 5%;
+}
+
+.label__text-hard {
+  margin: 0 0 112px 0;
+  height: 59px;
+  padding-left: 5%;
+}
+
 .label__text-easy:hover,
 .label__text-medium:hover,
 .label__text-hard:hover {
   top: 0;
   left: 25px;
   height: 59px;
-  width: 100%; 
+  width: 100%;
   background: url(../img/square.png) no-repeat;
   background-position: 5px;
   cursor: pointer;
@@ -65,24 +79,11 @@ body{
   background-position: 5px;
 }
 
-.label__text-easy,
-.label__text-medium {
-  margin: 0 0 24px 0;
-  height: 59px;
-  padding-left: 5%;
-}
-
-.label__text-hard {
-  margin: 0 0 112px 0;
-  height: 59px;
-  padding-left: 5%;
-}
-
 .difficulty__game-start {
   height: 95px;
   width: 352px;
   border-radius: 8px;
-  background-color: #D62B2E;
+  background-color: #d62b2e;
   font-size: 32px;
   color: #ffff;
   cursor: pointer;
@@ -91,7 +92,7 @@ body{
 }
 
 .difficulty__game-start:hover {
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .card {
@@ -126,9 +127,9 @@ body{
   border-radius: 10px;
 }
 
-.card__front, 
-.card__back, 
-.card__winner_back, 
+.card__front,
+.card__back,
+.card__winner_back,
 .card__looser_back {
   position: absolute;
   height: 341px;
@@ -223,7 +224,7 @@ body{
   .checked {
     height: 55px;
     background-position: 5px;
-}
+  }
 
   .label__text-easy,
   .label__text-medium {
@@ -235,14 +236,14 @@ body{
     margin: 0 0 70px 0;
     height: 55px;
   }
-  
+
   .card,
   .card__front, 
   .card__back, 
   .card__winner_back, 
   .card__looser_back,
   .card__looser_rotated,
-  .card__winner_rotated  {
+  .card__winner_rotated {
     height: 272px;
     width: 174px;
     background-size: 176px 274px;
@@ -290,7 +291,8 @@ body{
     max-height: 550px;
     margin-left: 63px;
     max-width: 1000px;
-    background: url(../img/card-first.png) top 150px left 550px no-repeat,
+    background: 
+                url(../img/card-first.png) top 150px left 550px no-repeat,
                 url(../img/card-second.png) top 150px left 454px no-repeat;
   }
 
@@ -371,8 +373,9 @@ body{
     max-height: 500px;
     margin-left: 43px;
     max-width: 800px;
-    background-position: top 100px left 460px,
-                         top 100px left 364px;
+    background-position: 
+                        top 100px left 460px,
+                        top 100px left 364px;
   }
 
   .nav__title {
@@ -452,7 +455,8 @@ body{
     max-height: 450px;
     margin-left: 43px;
     max-width: 650px;
-    background: url(../img/card-first.png) bottom 60px left 420px no-repeat,
+    background: 
+                url(../img/card-first.png) bottom 60px left 420px no-repeat,
                 url(../img/card-second.png) bottom 60px left 334px no-repeat;
   }
 
@@ -521,7 +525,7 @@ body{
 }
 
 @media (max-width: 670px) {
-   .body {
+  .body {
     min-height: 370px;
     max-height: 370px;
     max-width: 500px;
@@ -684,12 +688,14 @@ body{
   .body {
     max-width: 300px;
   }
+
   .nav {
     max-width: 300px;
   }
+
   .main-for-three-cards,
   .main-for-six-cards,
   .main-for-ten-cards {
     margin-top: 20px;
   }
-} 
+}
