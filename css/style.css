@@ -198,8 +198,8 @@ body {
     margin-left: 83px;
     max-width: 1200px;
     background:
-                url(../img/card-first.png) bottom 50px left 770px no-repeat,
-                url(../img/card-second.png) bottom 50px left 643px no-repeat;
+          url(../img/card-first.png) bottom 50px left 770px no-repeat,
+          url(../img/card-second.png) bottom 50px left 643px no-repeat;
   }
 
   .nav__title {
