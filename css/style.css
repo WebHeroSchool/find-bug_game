@@ -14,7 +14,7 @@ body {
   padding: 0;
   min-height: 750px;
   width: 1300px;
-  background: 
+  background:
           url(../img/card-first.png) bottom 0 left 900px no-repeat,
           url(../img/card-second.png) bottom 0 left 750px no-repeat;
 }
@@ -197,8 +197,9 @@ body {
     max-height: 660px;
     margin-left: 83px;
     max-width: 1200px;
-    background: url(../img/card-first.png) bottom 50px left 770px no-repeat,
-                url(../img/card-second.png) bottom 50px left 643px no-repeat;
+    background:
+          url(../img/card-first.png) bottom 50px left 770px no-repeat,
+          url(../img/card-second.png) bottom 50px left 643px no-repeat;
   }
 
   .nav__title {
@@ -214,6 +215,17 @@ body {
     font-size: 45px;
   }
 
+  .label__text-easy,
+  .label__text-medium {
+    margin: 0 0 20px 0;
+    height: 55px;
+  }
+
+  .label__text-hard {
+    margin: 0 0 70px 0;
+    height: 55px;
+  }
+
   .label__text-easy:hover,
   .label__text-medium:hover,
   .label__text-hard:hover {
@@ -226,21 +238,10 @@ body {
     background-position: 5px;
   }
 
-  .label__text-easy,
-  .label__text-medium {
-    margin: 0 0 20px 0;
-    height: 55px;
-  }
-
-  .label__text-hard {
-    margin: 0 0 70px 0;
-    height: 55px;
-  }
-
   .card,
-  .card__front, 
-  .card__back, 
-  .card__winner_back, 
+  .card__front,
+  .card__back,
+  .card__winner_back,
   .card__looser_back,
   .card__looser_rotated,
   .card__winner_rotated {
@@ -291,7 +292,7 @@ body {
     max-height: 550px;
     margin-left: 63px;
     max-width: 1000px;
-    background: 
+    background:
                 url(../img/card-first.png) top 150px left 550px no-repeat,
                 url(../img/card-second.png) top 150px left 454px no-repeat;
   }
@@ -308,7 +309,7 @@ body {
   .label {
     font-size: 40px;
   }
-  
+
   .label__text-easy:hover,
   .label__text-medium:hover,
   .label__text-hard:hover {
@@ -317,7 +318,7 @@ body {
 
   .checked {
     height: 44px;
-}
+  }
 
   .label__text-easy,
   .label__text-medium {
@@ -335,12 +336,12 @@ body {
   }
 
   .card,
-  .card__front, 
-  .card__back, 
-  .card__winner_back, 
+  .card__front,
+  .card__back,
+  .card__winner_back,
   .card__looser_back,
   .card__looser_rotated,
-  .card__winner_rotated  {
+  .card__winner_rotated {
     height: 217px;
     width: 139px;
     background-size: 142px 220px;
@@ -373,7 +374,7 @@ body {
     max-height: 500px;
     margin-left: 43px;
     max-width: 800px;
-    background-position: 
+    background-position:
                         top 100px left 460px,
                         top 100px left 364px;
   }
