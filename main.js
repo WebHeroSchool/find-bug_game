@@ -28,7 +28,7 @@ function getGameDifficult() {
     easyChecked.classList.add("checked");
     return 3;
   }
-};
+}
 
 const addFrontAndBackCardsSide = () => {
   let numberOfEachCardTurns = 0;

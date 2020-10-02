@@ -15,8 +15,8 @@ body {
   min-height: 750px;
   width: 1300px;
   background:
-          url(../img/card-first.png) bottom 0 left 900px no-repeat,
-          url(../img/card-second.png) bottom 0 left 750px no-repeat;
+      url(../img/card-first.png) bottom 0 left 900px no-repeat,
+      url(../img/card-second.png) bottom 0 left 750px no-repeat;
 }
 
 .nav__title {
@@ -67,7 +67,7 @@ body {
   background: url(../img/square.png) no-repeat;
   background-position: 5px;
   cursor: pointer;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .checked {
@@ -293,8 +293,8 @@ body {
     margin-left: 63px;
     max-width: 1000px;
     background:
-                url(../img/card-first.png) top 150px left 550px no-repeat,
-                url(../img/card-second.png) top 150px left 454px no-repeat;
+          url(../img/card-first.png) top 150px left 550px no-repeat,
+          url(../img/card-second.png) top 150px left 454px no-repeat;
   }
 
   .nav__title {
@@ -310,16 +310,6 @@ body {
     font-size: 40px;
   }
 
-  .label__text-easy:hover,
-  .label__text-medium:hover,
-  .label__text-hard:hover {
-    height: 44px;
-  }
-
-  .checked {
-    height: 44px;
-  }
-
   .label__text-easy,
   .label__text-medium {
     height: 44px;
@@ -327,6 +317,16 @@ body {
 
   .label__text-hard {
     margin-bottom: 50px;
+    height: 44px;
+  }
+
+  .label__text-easy:hover,
+  .label__text-medium:hover,
+  .label__text-hard:hover {
+    height: 44px;
+  }
+
+  .checked {
     height: 44px;
   }
 
@@ -375,8 +375,8 @@ body {
     margin-left: 43px;
     max-width: 800px;
     background-position:
-                        top 100px left 460px,
-                        top 100px left 364px;
+          top 100px left 460px,
+          top 100px left 364px;
   }
 
   .nav__title {
@@ -391,16 +391,6 @@ body {
   .label {
     font-size: 35px;
   }
-  
-  .label__text-easy:hover,
-  .label__text-medium:hover,
-  .label__text-hard:hover {
-    height: 35px;
-  }
-
-  .checked {
-    height: 35px;
-}
 
   .label__text-easy,
   .label__text-medium {
@@ -412,18 +402,28 @@ body {
     height: 35px;
   }
 
+  .label__text-easy:hover,
+  .label__text-medium:hover,
+  .label__text-hard:hover {
+    height: 35px;
+  }
+
+  .checked {
+    height: 35px;
+}
+
   .difficulty__start-game {
     height: 85px;
     width: 316px;
   }
 
   .card,
-  .card__front, 
-  .card__back, 
-  .card__winner_back, 
+  .card__front,
+  .card__back,
+  .card__winner_back,
   .card__looser_back,
   .card__looser_rotated,
-  .card__winner_rotated  {
+  .card__winner_rotated {
     height: 173px;
     width: 111px;
     background-size: 111px 173px;
@@ -456,9 +456,9 @@ body {
     max-height: 450px;
     margin-left: 43px;
     max-width: 650px;
-    background: 
-                url(../img/card-first.png) bottom 60px left 420px no-repeat,
-                url(../img/card-second.png) bottom 60px left 334px no-repeat;
+    background:
+          url(../img/card-first.png) bottom 60px left 420px no-repeat,
+          url(../img/card-second.png) bottom 60px left 334px no-repeat;
   }
 
   .nav__title {
@@ -472,16 +472,6 @@ body {
   .label {
     font-size: 33px;
   }
-  
-  .label__text-easy:hover,
-  .label__text-medium:hover,
-  .label__text-hard:hover {
-    height: 33px;
-  }
-
-  .checked {
-    height: 33px;
-}
 
   .label__text-easy,
   .label__text-medium {
@@ -492,6 +482,16 @@ body {
     margin-bottom: 30px;
     height: 33px;
   }
+  
+  .label__text-easy:hover,
+  .label__text-medium:hover,
+  .label__text-hard:hover {
+    height: 33px;
+  }
+
+  .checked {
+    height: 33px;
+}
 
   .difficulty__start-game {
     height: 76px;
@@ -537,8 +537,9 @@ body {
     max-height: 370px;
     margin-left: 33px;
     max-width: 550px;
-    background: url(../img/card-first.png) bottom 60px left 320px no-repeat,
-                url(../img/card-second.png) bottom 60px left 234px no-repeat;
+    background:
+          url(../img/card-first.png) bottom 60px left 320px no-repeat,
+          url(../img/card-second.png) bottom 60px left 234px no-repeat;
   }
 
   .nav__title {
@@ -553,6 +554,16 @@ body {
     font-size: 27px;
   }
 
+  .label__text-easy,
+  .label__text-medium {
+    height: 27px;
+  }
+
+  .label__text-hard {
+    margin-bottom: 25px;
+    height: 27px;
+  }
+
   .label__text-easy:hover,
   .label__text-medium:hover,
   .label__text-hard:hover {
@@ -563,16 +574,6 @@ body {
   .checked {
     height: 27px;
     background-size: 17px 17px;
-  }
-
-  .label__text-easy,
-  .label__text-medium {
-    height: 27px;
-  }
-
-  .label__text-hard {
-    margin-bottom: 25px;
-    height: 27px;
   }
 
   .difficulty__start-game {
@@ -636,12 +637,6 @@ body {
     font-size: 24px;
   }
 
-  .label__text-easy:hover,
-  .label__text-medium:hover,
-  .label__text-hard:hover {
-    height: 24px;
-  }
-
   .label__text-easy,
   .label__text-medium {
     height: 24px;
@@ -649,6 +644,12 @@ body {
 
   .label__text-hard {
     margin-bottom: 20px;
+    height: 24px;
+  }
+
+  .label__text-easy:hover,
+  .label__text-medium:hover,
+  .label__text-hard:hover {
     height: 24px;
   }
 
