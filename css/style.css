@@ -15,8 +15,8 @@ body {
   min-height: 750px;
   width: 1300px;
   background:
-          url(../img/card-first.png) bottom 0 left 900px no-repeat,
-          url(../img/card-second.png) bottom 0 left 750px no-repeat;
+      url(../img/card-first.png) bottom 0 left 900px no-repeat,
+      url(../img/card-second.png) bottom 0 left 750px no-repeat;
 }
 
 .nav__title {
